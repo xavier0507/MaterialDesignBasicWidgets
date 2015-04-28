@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimaryDark">@color/material_deep_teal_500</color>
+	<color name="colorPrimary">@color/material_deep_teal_500</color>
+
+	<color name="colorPinkPrimaryDark">#880e4f</color>
+	<color name="colorPinkPrimary">#f06292</color>
+	<color name="colorRedPrimaryDark">#ffff1744</color>
+	<color name="colorRedPrimary">#ffef9a9a</color>
+
+	<color name="colorListDefaultPrimaryDark">#ffaa00ff</color>
+	<color name="colorListDefaultPrimary">#ffab47bc</color>
+	<color name="colorListRedPrimaryDark">#ffd50000</color>
+	<color name="colorListRedPrimary">#ffef5350</color>
+	<color name="colorListBluePrimaryDark">#ff651fff</color>
+	<color name="colorListBluePrimary">#ff3f51b5</color>
+	<color name="colorListGreenPrimaryDark">#ff00c853</color>
+	<color name="colorListGreenPrimary">#ff64ffda</color>
+
+	<color name="red">#bf360c</color>
+	<color name="blue">#304f9f</color>
+</resources>

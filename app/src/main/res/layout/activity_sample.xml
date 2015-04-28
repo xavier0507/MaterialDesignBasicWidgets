@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+	android:id="@+id/drawer_layout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="?attr/colorPrimary"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:background="@color/material_blue_grey_800">
+
+			<android.support.v7.internal.widget.TintCheckBox
+				android:id="@+id/tintcheckbox"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="128dp"
+				android:checked="true"/>
+
+			<android.support.v7.widget.SwitchCompat
+				android:id="@+id/switchcompat"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/tintcheckbox"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:layout_marginTop="20dp"/>
+
+			<android.support.v7.internal.widget.TintEditText
+				android:id="@+id/tintedittxt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/switchcompat"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:layout_marginTop="20dp"
+				android:text="Sample EditText"/>
+
+			<android.support.v7.internal.widget.TintRadioButton
+				android:id="@+id/tintradio"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/tintedittxt"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:layout_marginTop="20dp"
+				android:text="Sample Text"/>
+
+			<com.example.materialdesignpractice.customs.CustomTextView
+				android:id="@+id/customTextView"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/tintradio"
+				android:layout_margin="10dp"
+				android:text="Test"
+				app:text_back_ground="#00FF00"
+				app:text_color="#FFFFFFFF"
+				app:text_size="30"/>
+
+			<!--
+			<com.example.materialdesignpractice.customs.ProgressBarCircular
+				android:id="@+id/progress"
+				android:layout_width="32dp"
+				android:layout_height="32dp"
+				android:layout_below="@+id/customTextView"
+				android:layout_centerHorizontal="true"
+				android:background="#FFFFFFFF"
+				android:layout_centerVertical="true"
+				android:layout_marginTop="20dp"
+				android:textSize="24sp"/>-->
+		</RelativeLayout>
+	</LinearLayout>
+
+	<ListView
+		android:id="@+id/navdrawer"
+		android:layout_width="@dimen/navdrawer_width"
+		android:layout_height="match_parent"
+		android:layout_gravity="start"
+		android:layout_marginTop="?attr/actionBarSize"
+		android:background="?attr/colorPrimary"
+		android:choiceMode="singleChoice"
+		android:divider="@android:color/white"
+		android:dividerHeight="1dp"
+		android:drawSelectorOnTop="false"/>
+</android.support.v4.widget.DrawerLayout>
